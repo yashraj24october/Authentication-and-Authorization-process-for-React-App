@@ -8,7 +8,7 @@ In this guide, we will learn how we manage users and their redirection to pages 
 <li>In routing of our react app, we will use two wrapper components:  ProtectedRoute and RoleBasedRedirect.
   <br/>
 <ul>
-<li><strong>ProtectedRoute Component: </strong>  ProtectedRoute Wrapper component will return the children component, only when currentUser is authenticated.
+<li><strong>ProtectedRoute Component: </strong>  ProtectedRoute Wrapper component will return the children component, only when currentUser is authenticated. We can check authentication using user data from context api/jwt token from localstorage, that we set after logged-in.
 </li>
   <li><strong>RoleBasedRedirect Component: </strong>  We will use this component for homepage redirection of user. <br/>In which we will check what role current user has.
 if current user has admin role, then we will redirect them to admin homepage
